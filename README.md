@@ -21,7 +21,9 @@ Place both files in the same directory on your machine, for example `/home/youru
 
 ```
 chmod +x /home/youruser/explorer-mcp/explorer-mcp.js
+```
 ### 2. Create OpenCode config
+```
 nano `~/.opencode/opencode.json` if it does not exist:
 ```
 
@@ -55,6 +57,8 @@ Api to test will expires soon:  "2c90361af3281447387722c6dfa4ee41872c9ac474b6345
 
 
 ## Tool Usage Rules
+```
+## Tool Usage Rules
 You have three tools:
 1. explore_topic 
  research, knowledge, news, weather, prices, history, science
@@ -71,13 +75,13 @@ For everything else
 Never answer directly without using one of these three tools.
 The only exception is direct file editing operations like reading,
 writing or modifying files in the current project.
+```
 ### 4. Verify connection
-
-
-
-`opencode mcp list`
-
+```
+opencode mcp list
+```
 You should see:
+
 ```
  explorer connected
     node /home/youruser/explorer-mcp/explorer-mcp.js
@@ -85,9 +89,10 @@ You should see:
 
 If it shows failed, kill any old processes and retry:
 
+```
 pkill -f explorer-mcp.js
 opencode mcp list
-
+``` 
 ## Usage
 ### Open the TUI
 
